@@ -54,4 +54,4 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 - Click on Actions, select Edit Route Propagation
 - Enable route propagation and save
 
-**Everything is ready from AWS Side, now we work on GCP**
+**Everything is ready from AWS Side, now we will work on GCP**
