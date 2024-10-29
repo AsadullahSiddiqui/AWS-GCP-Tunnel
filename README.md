@@ -12,3 +12,8 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 - Create a Security Group which allows ports[ssh, icmp]
 
 ## Create Customer Gateway
+![image](https://github.com/user-attachments/assets/e7503c57-8d52-40c7-a8c0-8ef779ec2bb6)
+CLick on create Customer Gateway
+**Note:** Mentioned IP address is the Elastic IP address which is already created on GCP
+
+## Create Virtual Private Gateway
