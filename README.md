@@ -15,7 +15,7 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 ![image](https://github.com/user-attachments/assets/e7503c57-8d52-40c7-a8c0-8ef779ec2bb6)
 
 - CLick on create Customer Gateway
-**Note:** Mentioned IP address is the Elastic IP address which is already created on GCP
+- **Note:** Mentioned IP address is the Elastic IP address which is already created on GCP
 
 ## Create Virtual Private Gateway
 
@@ -23,3 +23,14 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 
 - CLick on create Virtual Private Gateway
 - Attach this Virtual Private Gateway with your VPC
+
+## Create VPN Connection
+- In Virtual Private Gateway field, select the gateway which you were created earlier named as aws-vpg
+- In Customer Private Gateway field, select the gateway which you were created earlier named as aws-customergateway
+- Static IP Prefix field = Enter the subnet of GCP on which your GCP instance is attached
+- Local IPv4 network CIDR = 0.0.0.0/0 [It is the IPv4 range from GCP side]
+- Remote IPv4 network CIDR = 0.0.0.0/0 [It is the IPv4 range from AWS side]
+
+![image](https://github.com/user-attachments/assets/27f4ac58-37dd-4ada-a6a0-dddadf3c88eb)
+![image](https://github.com/user-attachments/assets/9d44ce6b-5c7f-41e1-be1b-9187d9f00cc0)
+
