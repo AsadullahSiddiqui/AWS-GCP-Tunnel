@@ -12,6 +12,7 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 - Create a Security Group which allows ports[ssh, icmp]
 
 ## Create Customer Gateway
+
 ![image](https://github.com/user-attachments/assets/e7503c57-8d52-40c7-a8c0-8ef779ec2bb6)
 
 - CLick on create Customer Gateway
@@ -43,3 +44,14 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 
 ![image](https://github.com/user-attachments/assets/4a627088-0e95-439d-bec3-6ed20132c550)
 
+- View the details of downloaded files and save the details which are shown below, these details will use further in GCP
+- As we created only 1 tunnel for traffic, thats why we only consider information of #IPSec Tunnel #1
+
+![image](https://github.com/user-attachments/assets/4e90e5a3-a6c4-47aa-b3b8-a2aed6295e91)
+
+## Enable Route Propagation
+- Select your Public Route Table
+- Click on Actions, select Edit Route Propagation
+- Enable route propagation and save
+
+**Everything is ready from AWS Side, now we work on GCP**
