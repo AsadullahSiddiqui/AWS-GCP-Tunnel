@@ -34,3 +34,12 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 ![image](https://github.com/user-attachments/assets/27f4ac58-37dd-4ada-a6a0-dddadf3c88eb)
 ![image](https://github.com/user-attachments/assets/9d44ce6b-5c7f-41e1-be1b-9187d9f00cc0)
 
+- Click on create VPN Connection
+- Once its state is available, select your VPN connection and click on Download Configuration.
+
+![image](https://github.com/user-attachments/assets/8b865515-a8ed-4ad1-a9b4-6936ea5674f9)
+
+- Select options as shown below and click on Download
+
+![image](https://github.com/user-attachments/assets/4a627088-0e95-439d-bec3-6ed20132c550)
+
