@@ -100,9 +100,9 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 
 ## Test your VPN connection
 
-- Access your AWS EC2 instance, and execute **ping <IP address of GCP Instance>**
+- Access your AWS EC2 instance, and execute **ping (IP address of GCP Instance)**
 - It will communicate successfully with GCP VM.
-- Now, SSH your Google VM instance, and execute **ping <IP address of EC2 Instance>**
+- Now, SSH your Google VM instance, and execute **ping (IP address of EC2 Instance)**
 - It will communicate successfully with AWS EC2 Instance
 
 ## Some Use Cases
