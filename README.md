@@ -74,4 +74,29 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 - Click on Continue
 - In Network field, select the VPC which you were created earlier.
 - In region Field, select the region where you have created External Static IP.
-- In IP Address field, 
+- In IP Address field, enter the External Static IP = 192.0.1.6
+
+ ![image](https://github.com/user-attachments/assets/1848c65e-cdc1-4f5a-acd5-0984289a5a1b)
+
+- We will create only 1 tunnel here, details of tunnels are mentioned below
+- In Remote Peer IP Address, enter the Outside IP of AWS, which you can check in AWS VPN Configuration file, as shown above
+- In IKE version field, select IKEv1 as you selected in AWS.
+- In IKE pre-shared Key field, enter the pre-shared key, whcih you can find in AWS VPN Connection Configuration file
+
+![image](https://github.com/user-attachments/assets/afe39f5e-007a-4615-a7ae-c6b090ed3c74)
+
+- In Routing Option, select Route-based
+- In Remote Network IP Ranges, select the subnet of AWS on which your EC2 instance is running.
+- press done
+
+![image](https://github.com/user-attachments/assets/1da0d06c-feca-4316-ab9b-18b831bc4d14)
+
+- Click on Create
+- Your VPN connection from AWS to GCP has established
+
+## Test your VPN connection
+
+- Access your AWS EC2 instance, and execute **ping <IP address of GCP Instance>**
+- It will communicate successfully with GCP VM.
+- Now, SSH your Google VM instance, and execute **ping <IP address of EC2 Instance>**
+- It will communicate successfully with AWS EC2 Instance
