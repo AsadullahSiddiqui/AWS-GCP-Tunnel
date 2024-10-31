@@ -62,5 +62,16 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 - Create 1 VM in Compute Engine having Ubuntu OS.
 - Create a Firewall Rules which allows ports[ssh, icmp]
 - Reserve 1 External Static IP Address from VPC > IP Addresses
+- External Static IP = 192.0.1.6
 
+## Create VPN 
+- Search Network Connectivity in GCP
+- Select VPN and click on VPN, then press create VPN Connection
+- Select Classic VPN
 
+  ![image](https://github.com/user-attachments/assets/e6c5a225-c13f-4da6-834f-054e6af34a26)
+
+- Click on Continue
+- In Network field, select the VPC which you were created earlier.
+- In region Field, select the region where you have created External Static IP.
+- In IP Address field, 
