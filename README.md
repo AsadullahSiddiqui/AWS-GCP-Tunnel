@@ -61,7 +61,7 @@ Establish secure connectivity between AWS and GCP instances using a VPN tunnel.
 **Everything is ready from AWS Side, now we will work on GCP**
 
 
-## Steps on AWS
+## Steps on GCP
 - Create 1 VPC with best practices with atleast 1 subnet [subnet=172.16.0.0/24]
 - Create 1 VM in Compute Engine having Ubuntu OS.
 - Create a Firewall Rules which allows ports[ssh, icmp]
